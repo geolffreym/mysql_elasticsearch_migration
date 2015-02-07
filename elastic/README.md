@@ -13,16 +13,18 @@ DEPENDENCIES
 elasticsearch-python >= 1.4.0
 [Go to Elastic Python Home](http://www.elasticsearch.org/guide/en/elasticsearch/client/python-api/current/)
 
-Create your own search methods in query.py
-[Go to Elastic Python DOC](http://elasticsearch-py.readthedocs.org/en/latest/api.html)
-
-
 elasticsearch >= 1.4.2
 [Go to Install ElasticSearch](http://www.elasticsearch.org/guide/en/elasticsearch/guide/current/_installing_elasticsearch.html)
 
 
 jdbc-river
 [Go to jdbc-river plugin doc](https://github.com/jprante/elasticsearch-river-jdbc)
+
+
+CONTRIBUTE
+---------
+Create your own search methods in query.py
+[Go to Elastic Python DOC](http://elasticsearch-py.readthedocs.org/en/latest/api.html)
 
 
 PLAYING TRICKS
