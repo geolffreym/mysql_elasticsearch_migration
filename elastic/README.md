@@ -29,22 +29,17 @@ http://www.elasticsearch.org/blog/playing-http-tricks-nginx/
 ABOUT
 ======
 
-config.py
----------
+######config.py
 Contains the basic configuration of the module, you can set your constant and configure your connections
 
-meta.py
---------
+######meta.py
 Contains all sql queries associated with each entity type to search
 
-search.py
---------
+######search.py
 Contains the configuration fields and indexes to associate to search
 
-query.py
---------
+######query.py
 It is the most important files because it contains the methods used to search
 
-migration.py
------------
+######migration.py
 Contains the methods to use for migration from mysql to elastic
