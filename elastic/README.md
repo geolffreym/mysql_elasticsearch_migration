@@ -2,6 +2,11 @@ ELASTICSEARCH SIMPLE MIGRATION
 ===============================
 This is a simple example of migration from mysql to elasticsearch using JDBC in python
 
+To start just run
+ ```
+python run/migrate_all.py
+```
+
 DEPENDENCIES
 ------------
 
@@ -43,6 +48,3 @@ It is the most important files because it contains the methods used to search
 migration.py
 -----------
 Contains the methods to use for migration from mysql to elastic
-
-
-To start just run "python run/migrate_all.py"
