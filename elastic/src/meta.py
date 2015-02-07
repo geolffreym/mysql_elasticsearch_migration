@@ -1,6 +1,6 @@
 __author__ = 'Geolffrey Mena <gmjun2000@gmail.com>'
 """
-Los meta asociados a cada consulta
+The sql associated with each type
 """
 
 meta_generated = {
