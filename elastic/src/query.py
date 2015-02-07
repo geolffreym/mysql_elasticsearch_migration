@@ -12,7 +12,7 @@ MAX_TERMS_QUERY = 25
 
 def search(query, max_size=10):
     """
-    Search on elastic
+    Search fuzzy on elasticsearch
     query: the search param
     """
     # fields_to = fields_search[type_to_find]
