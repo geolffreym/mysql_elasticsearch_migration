@@ -1,0 +1,48 @@
+ELASTICSEARCH SIMPLE MIGRATION
+===============================
+This is a simple example of migration from mysql to elasticsearch using JDBC in python
+
+DEPENDENCIES
+------------
+
+elasticsearch-python >= 1.4.0
+[Go to Elastic Python Home](http://www.elasticsearch.org/guide/en/elasticsearch/client/python-api/current/)
+
+
+elasticsearch >= 1.4.2
+[Go to Install ElasticSearch](http://www.elasticsearch.org/guide/en/elasticsearch/guide/current/_installing_elasticsearch.html)
+
+
+jdbc-river
+[Go to jdbc-river plugin doc](https://github.com/jprante/elasticsearch-river-jdbc)
+
+
+PLAYING TRICKS
+--------------
+http://www.elasticsearch.org/blog/playing-http-tricks-nginx/
+
+ABOUT
+======
+
+config.py
+---------
+Contains the basic configuration of the module, you can set your constant and configure your connections
+
+meta.py
+--------
+Contains all sql queries associated with each entity type to search
+
+search.py
+--------
+Contains the configuration fields and indexes to associate to search
+
+query.py
+--------
+It is the most important files because it contains the methods used to search
+
+migration.py
+-----------
+Contains the methods to use for migration from mysql to elastic
+
+
+To start just run "python run/migrate_all.py"
