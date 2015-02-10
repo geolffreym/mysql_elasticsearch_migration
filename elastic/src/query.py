@@ -1,7 +1,7 @@
-__author__ = 'Geolffrey Mena <gmjun2000@gmail.com>'
+__author__ = 'gmena'
 from elasticsearch import Elasticsearch
-from elastic.src.search import config_search
-from elastic.src.config import *
+from elastic.search import config_search
+from elastic.config import *
 
 es = Elasticsearch()
 
@@ -10,15 +10,17 @@ MAX_TERMS_QUERY = 25
 # TEXT_TO_FIND = "Francis"
 
 
-def search(query, max_size=10):
+def search(query, max_size=10, index=config_search['index']):
     """
-    Search fuzzy on elasticsearch
-    query: the search param
+    Busqueda en elastic
+    type_to_find: es la entidad asociada a la base de datos
+    y la declaracion de meta
+    query: el parametro de busqueda
     """
     # fields_to = fields_search[type_to_find]
     return es.search(
         index=JDBC_META_INDEX,
-        doc_type=config_search['index'],
+        doc_type=index,
         size=max_size,
         body={
             "query": {
@@ -32,8 +34,7 @@ def search(query, max_size=10):
 
 
 def search_by_type(type_as, query, max_size=10):
-    config_search['index'] = [type_as]
-    return search(query, max_size)
+    return search(query, max_size, [type_as])
 
 
 def cleaned_search(result):
