@@ -38,11 +38,12 @@ def search_by_type(type_as, query, max_size=10):
 
 def cleaned_search(result):
     cleaned = []
-    for k, hit in result.items():
-        if isinstance(hit, list):
-            for r in hit:
-                new_result = {}
-                new_result['type'] = r.get('_type', None)
-                new_result['source'] = r.get('_source', None)
-                cleaned.append(new_result)
+    if result:
+        for k, hit in result.items():
+            if isinstance(hit, list):
+                for r in hit:
+                    new_result = {}
+                    new_result['type'] = r.get('_type', None)
+                    new_result['source'] = r.get('_source', None)
+                    cleaned.append(new_result)
     return cleaned
