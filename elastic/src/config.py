@@ -1,11 +1,12 @@
 __author__ = 'Geolffrey Mena <gmjun2000@gmail.com>'
+
 """
 Please read documentation jdbc plugin elasticsearch
 https://github.com/jprante/elasticsearch-river-jdbc
 """
 
 
-#set mysql database http root
+# set mysql database http root
 URL_DEFAULT = "jdbc:mysql://localhost:3306/mydb"
 
 #mysql user

@@ -1,7 +1,8 @@
 __author__ = 'gmena'
+
 from elasticsearch import Elasticsearch
-from elastic.search import config_search
-from elastic.config import *
+from elastic.src.search import config_search
+from elastic.src.config import *
 
 es = Elasticsearch()
 
@@ -17,7 +18,7 @@ def search(query, max_size=10, index=config_search['index']):
     y la declaracion de meta
     query: el parametro de busqueda
     """
-    # fields_to = fields_search[type_to_find]
+        # fields_to = fields_search[type_to_find]
     return es.search(
         index=JDBC_META_INDEX,
         doc_type=index,
