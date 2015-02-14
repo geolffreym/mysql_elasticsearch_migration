@@ -9,6 +9,6 @@ These fields are associated with the db queries therefore be
 be relevant
 """
 config_search = {
-    "fields": ("identification", "name" ),
+    "fields": ("id", "identification", "name" ),
     "index": ("user", "client")
 }
