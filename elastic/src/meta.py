@@ -5,9 +5,9 @@ The sql associated with each type
 
 meta_generated = {
     'user': {
-        "sql": "SELECT name FROM user"
+        "sql": "SELECT id, name FROM user"
     },
     'client': {
-        "sql": "SELECT identification FROM client"
+        "sql": "SELECT id, identification FROM client"
     }
 }
