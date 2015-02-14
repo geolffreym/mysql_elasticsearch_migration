@@ -9,5 +9,4 @@ from elastic.src.query import create_document
 
 print create_document({"id": 1,
                        "first_name": "Frank",
-                       "last_name": "Ortega"
-                      }, 'users')
+                       "last_name": "Castellon"}, 'user')
