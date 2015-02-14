@@ -11,6 +11,19 @@ MAX_TERMS_QUERY = 25
 # TEXT_TO_FIND = "Francis"
 
 
+def get_document_id(rtype, query):
+    """
+    Get the document id by search
+    :param rtype:
+    :param query:
+    :return:
+    """
+    data = search_by_type(rtype, query, 1)
+    if len(data["hits"]["hits"]) > 0:
+        return data["hits"]["hits"][0]['_id']
+    return None
+
+
 def search(query, max_size=10, index=config_search['index']):
     """
     Busqueda en elastic
@@ -56,6 +69,24 @@ def create_document(data, rtype):
         index=JDBC_META_INDEX,
         doc_type=rtype,
         body=data
+    )
+
+
+def update_document(rtype, doc_id, new_data):
+    """
+    Update a existent document
+    :param rtype:
+    :param doc_id:
+    :param new_data:
+    :return:
+    """
+    return es.update(
+        index=JDBC_META_INDEX,
+        doc_type=rtype,
+        id=doc_id,
+        body={
+            "doc": new_data
+        }
     )
 
 
