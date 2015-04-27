@@ -119,10 +119,13 @@ def cleaned_search(result):
     cleaned = []
     if result:
         for k, hit in result.items():
-            if isinstance(hit, list):
-                for r in hit:
-                    new_result = {}
-                    new_result['type'] = r.get('_type', None)
-                    new_result['source'] = r.get('_source', None)
-                    cleaned.append(new_result)
+
+            if not isinstance(hit, list):
+                continue
+
+            for r in hit:
+                new_result = dict()
+                new_result['type'] = r.get('_type', None)
+                new_result['source'] = r.get('_source', None)
+                cleaned.append(new_result)
     return cleaned
