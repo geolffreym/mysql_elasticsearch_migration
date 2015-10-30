@@ -10,7 +10,7 @@ python run/migrate_all.py
 DEPENDENCIES
 ------------
 
-elasticsearch-python >= 1.4.0
+elasticsearch-python >= 1.4.0 and <= 1.4.4
 [Go to Elastic Python Home](http://www.elasticsearch.org/guide/en/elasticsearch/client/python-api/current/)
 
 elasticsearch >= 1.4.2
