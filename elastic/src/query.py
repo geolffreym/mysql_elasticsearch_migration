@@ -112,7 +112,7 @@ def delete_document(uid, rtype):
 
 def cleaned_search(result):
     """
-    Clean the search, with onle data needed
+    Clean the search, with only data needed
     :param result:
     :return dict:
     """
