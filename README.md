@@ -11,13 +11,16 @@ DEPENDENCIES
 ------------
 
 elasticsearch-python >= 1.4.0 
+
 [Go to Elastic Python Home](http://www.elasticsearch.org/guide/en/elasticsearch/client/python-api/current/)
 
-elasticsearch >= 1.4.2 and <= 1.4.4
+elasticsearch ( >= 1.4.2 - <= 1.4.4) 
+
 [Go to Install ElasticSearch](http://www.elasticsearch.org/guide/en/elasticsearch/guide/current/_installing_elasticsearch.html)
 
 
 jdbc-river
+
 [Go to jdbc-river plugin doc](https://github.com/jprante/elasticsearch-river-jdbc)
 
 
