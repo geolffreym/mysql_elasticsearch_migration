@@ -10,7 +10,7 @@ python run/migrate_all.py
 DEPENDENCIES
 ------------
 
-elasticsearch-python >= 1.4.0 
+elasticsearch-python (>= 1.4.0) 
 
 [Go to Elastic Python Home](http://www.elasticsearch.org/guide/en/elasticsearch/client/python-api/current/)
 
@@ -21,7 +21,10 @@ elasticsearch ( >= 1.4.2 - <= 1.4.4)
 
 jdbc-river
 
-[Go to jdbc-river plugin doc](https://github.com/jprante/elasticsearch-river-jdbc)
+Just copy the "odbc" into the directory "elasticsearch plugins" folder ex: (/usr/share/elasticsearch/plugin)
+
+[JDBC](https://github.com/jprante/elasticsearch-jdbc)
+
 
 
 CONTRIBUTE
