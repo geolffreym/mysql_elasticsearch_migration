@@ -23,6 +23,8 @@ DEPENDENCIES
 
 Just copy the "jdbc" directory, into the directory "elasticsearch plugins". ex: (/usr/share/elasticsearch/plugin)
 
+Restart ElasticSearch.. Ready..
+
 [JDBC Official](https://github.com/jprante/elasticsearch-jdbc)
 
 
